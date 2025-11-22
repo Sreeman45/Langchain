@@ -1,7 +1,6 @@
 import express from "express";
 
 const a:string="sreeman"
-console.log(a + "is hot")
 const app = express();
 
 app.get('/', (req: express.Request, res: express.Response) => {
@@ -19,7 +18,7 @@ function test<T>(){
 }
 app.listen(3000, () => {
     console.log("server is running")
-    test.length
+    test.then((res)=>console.log(res))
     
 
 })
